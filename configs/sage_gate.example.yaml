@@ -1,0 +1,9 @@
+# SAGE acceptance gate overlay for vendored SkillOpt configs.
+
+evaluation:
+  gate_select: sage
+  gate_metric: hard
+  sage_alpha: 0.05
+  sage_loss_weight: 1.0
+  sage_regression_tau: 1.0
+

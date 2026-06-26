@@ -1,0 +1,23 @@
+* text=auto eol=lf
+
+*.md text eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+**/*.md text eol=lf
+**/*.py text eol=lf
+**/*.yaml text eol=lf
+**/*.yml text eol=lf
+**/*.json text eol=lf
+**/*.toml text eol=lf
+**/*.txt text eol=lf
+
+*.png binary
+**/*.png binary
+
+# Preserve CR bytes inside patch hunks that mirror upstream source line endings.
+*.patch -text
+**/*.patch -text

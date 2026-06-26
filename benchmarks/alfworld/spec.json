@@ -1,0 +1,16 @@
+{
+  "name": "alfworld",
+  "task_file": "data/raw/alfworld/tasks.jsonl",
+  "output_dir": "outputs/alfworld",
+  "command": [
+    "<python>",
+    "-m",
+    "benchmarks.alfworld.launch",
+    "--tasks",
+    "data/raw/alfworld/tasks.jsonl",
+    "--output-dir",
+    "outputs/alfworld"
+  ],
+  "env": {},
+  "description": "Reproducible launcher scaffold for ALFWorld tasks."
+}

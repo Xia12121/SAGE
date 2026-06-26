@@ -1,0 +1,41 @@
+.worktrees/
+# Credentials and local environment
+.env
+.env.*
+!*.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Outputs and result artifacts
+runs/
+outputs/
+build/
+dist/
+results/
+returned/
+summary.json
+events.jsonl
+*.log
+*.docx
+*.egg-info/
+
+# Data that must be materialized by the user
+data/raw/
+data/cache/
+data/generated/
+SkillOpt/outputs/
+SkillOpt/data/
+
+# Nested repository metadata and local debug files
+SkillOpt/.git/
+**/.DS_Store
+*_debug*

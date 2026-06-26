@@ -1,0 +1,16 @@
+{
+  "name": "spreadsheetbench",
+  "task_file": "data/raw/spreadsheetbench/tasks.jsonl",
+  "output_dir": "outputs/spreadsheetbench",
+  "command": [
+    "<python>",
+    "-m",
+    "benchmarks.spreadsheetbench.launch",
+    "--tasks",
+    "data/raw/spreadsheetbench/tasks.jsonl",
+    "--output-dir",
+    "outputs/spreadsheetbench"
+  ],
+  "env": {},
+  "description": "Reproducible launcher scaffold for SpreadsheetBench/SSB tasks."
+}

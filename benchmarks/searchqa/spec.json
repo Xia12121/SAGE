@@ -1,0 +1,16 @@
+{
+  "name": "searchqa",
+  "task_file": "data/raw/searchqa/tasks.jsonl",
+  "output_dir": "outputs/searchqa",
+  "command": [
+    "<python>",
+    "-m",
+    "benchmarks.searchqa.launch",
+    "--tasks",
+    "data/raw/searchqa/tasks.jsonl",
+    "--output-dir",
+    "outputs/searchqa"
+  ],
+  "env": {},
+  "description": "Reproducible launcher scaffold for SearchQA tasks."
+}

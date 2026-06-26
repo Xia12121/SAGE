@@ -1,0 +1,9 @@
+# Strict SkillOpt baseline recovery overlay.
+
+evaluation:
+  gate_select: strict
+  gate_metric: hard
+  sage_alpha: 1.0
+  sage_loss_weight: 1.0
+  sage_regression_tau: 1.0
+

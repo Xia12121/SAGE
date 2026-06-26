@@ -1,0 +1,17 @@
+# Copy this file locally and fill in provider-specific model settings.
+# Do not commit local credentials or measured run outputs.
+
+model:
+  optimizer_backend: openai_chat
+  target_backend: openai_chat
+  optimizer_model: gpt-5.5
+  target_model: gpt-5.5
+  reasoning_effort: medium
+
+credentials:
+  # Prefer environment variables or a local untracked config file.
+  openai_api_key: ""
+  azure_openai_endpoint: ""
+  azure_openai_api_version: ""
+  azure_openai_api_key: ""
+

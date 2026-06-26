@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage-skill-evolution"
+version = "0.1.0"
+description = "Anonymous SAGE reproduction package for skill self-evolution acceptance"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = [
+    "sage",
+    "benchmarks",
+    "benchmarks.common",
+    "benchmarks.spreadsheetbench",
+    "benchmarks.livemath",
+    "benchmarks.searchqa",
+    "benchmarks.officeqa",
+    "benchmarks.alfworld",
+]
+
+[tool.setuptools.package-data]
+"benchmarks.spreadsheetbench" = ["spec.json"]
+"benchmarks.livemath" = ["spec.json"]
+"benchmarks.searchqa" = ["spec.json"]
+"benchmarks.officeqa" = ["spec.json"]
+"benchmarks.alfworld" = ["spec.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

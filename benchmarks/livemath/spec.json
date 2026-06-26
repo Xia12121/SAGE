@@ -1,0 +1,16 @@
+{
+  "name": "livemath",
+  "task_file": "data/raw/livemath/tasks.jsonl",
+  "output_dir": "outputs/livemath",
+  "command": [
+    "<python>",
+    "-m",
+    "benchmarks.livemath.launch",
+    "--tasks",
+    "data/raw/livemath/tasks.jsonl",
+    "--output-dir",
+    "outputs/livemath"
+  ],
+  "env": {},
+  "description": "Reproducible launcher scaffold for LiveMath tasks."
+}

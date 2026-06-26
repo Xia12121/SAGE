@@ -1,0 +1,16 @@
+{
+  "name": "officeqa",
+  "task_file": "data/raw/officeqa/tasks.jsonl",
+  "output_dir": "outputs/officeqa",
+  "command": [
+    "<python>",
+    "-m",
+    "benchmarks.officeqa.launch",
+    "--tasks",
+    "data/raw/officeqa/tasks.jsonl",
+    "--output-dir",
+    "outputs/officeqa"
+  ],
+  "env": {},
+  "description": "Reproducible launcher scaffold for OfficeQA tasks."
+}
