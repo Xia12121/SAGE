@@ -15,6 +15,12 @@
   <img alt="Status" src="https://img.shields.io/badge/status-research%20artifact-informational">
 </p>
 
+<br/>
+
+<img src="assets/sage_pipeline.png" alt="SAGE pipeline overview" width="100%">
+
+<sub><b>Figure 1.</b> The generation loop is inherited unchanged from SkillOpt. SAGE replaces the acceptance step with <b>(1)</b> per-item paired evaluation of the new skill against the incumbent and <b>(2)</b> hypothesis-test denoising — committing the edition only when the evidence is strong enough, and otherwise keeping the previous skill.</sub>
+
 </div>
 
 ---
@@ -44,20 +50,8 @@ outputs, credentials, private machine details, and paper source files.
 
 ## 🧠 How the gate works
 
-```mermaid
-flowchart LR
-    A["Candidate skill<br/>rollouts"] --> C
-    B["Incumbent skill<br/>rollouts"] --> C
-    C["Paired per-item ledger<br/>wins · losses · ties"] --> D{"Exact sign test<br/>p &lt; α ?"}
-    D -- "no" --> X["🚫 ABSTAIN"]
-    D -- "yes" --> E{"Discounted gain<br/>wins − λ·losses &gt; 0 ?"}
-    E -- "no" --> X
-    E -- "yes" --> F{"Regression rate<br/>≤ τ ?"}
-    F -- "no" --> X
-    F -- "yes" --> G["✅ COMMIT"]
-```
-
-A candidate is **committed** only when **all three** conditions hold:
+Following the pipeline in **Figure 1**, a candidate edition is **committed**
+only when **all three** conditions hold:
 
 | # | Test | Rule | Source |
 |---|------|------|--------|
