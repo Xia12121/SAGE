@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1><img src="assets/confucius-avatar.png" alt="Confucius" width="64" height="64"> SAGE</h1>
+<h1><img src="assets/confucius-avatar.png" alt="Confucius" width="32" height="32"> SAGE</h1>
 
 ### Statistical Acceptance Gate for Skill Self-Evolution
 
